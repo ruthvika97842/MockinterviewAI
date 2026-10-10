@@ -1,0 +1,9 @@
+{
+  "name": "MockWise AI",
+  "description": "AI-Powered Mock Interview Platform tailored for Indian college students and fresh graduates, specializing in ECE and tech placement interviews.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

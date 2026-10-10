@@ -1,0 +1,223 @@
+{
+  "users": [
+    {
+      "id": "usr-demo-101",
+      "email": "kamparuthvika22@gmail.com",
+      "fullName": "Ruthvika Kampa",
+      "passwordHash": "demo123",
+      "createdAt": "2026-10-10T06:32:12.376Z"
+    }
+  ],
+  "profiles": [
+    {
+      "userId": "usr-demo-101",
+      "fullName": "Ruthvika Kampa",
+      "age": 21,
+      "education": "B.Tech Undergrad",
+      "college": "National Institute of Technology",
+      "degree": "Electronics & Communication Engineering (ECE)",
+      "preferredJobRole": "Embedded Software Engineer",
+      "experienceLevel": "Fresher / Final Year Undergrad",
+      "skills": [
+        "Embedded C",
+        "STM32",
+        "ARM Cortex-M",
+        "RTOS (FreeRTOS)",
+        "I2C / SPI / UART",
+        "Verilog",
+        "Microcontrollers"
+      ],
+      "careerObjective": "Aspiring Embedded Systems Engineer targeting core electronics and automotive firmware placement drives.",
+      "updatedAt": "2026-10-10T06:32:12.376Z"
+    }
+  ],
+  "resumes": [
+    {
+      "id": "res-demo-202",
+      "userId": "usr-demo-101",
+      "fileName": "Ruthvika_Kampa_ECE_Resume.pdf",
+      "extractedText": "Ruthvika Kampa - Final Year B.Tech ECE\nEducation: B.Tech in Electronics & Communication Engineering (CGPA: 8.7/10)\nProjects:\n1. Smart Agricultural IoT Monitoring using STM32 Microcontroller: Interfaced temperature, soil moisture sensors via I2C and communicated sensor payloads via FreeRTOS task queues and ESP32 UART.\n2. Digital Clock with Alarm using Verilog on Xilinx Basys 3 FPGA: Designed finite state machine (FSM) with debounce logic, 7-segment multiplexing display, and synchronous counters.\n3. Automotive CAN Bus Communication Node: Developed firmware in Embedded C to broadcast sensor diagnostics and packet arbitration.\nTechnical Skills: Embedded C, C++, Verilog, ARM Cortex-M4, FreeRTOS, Microcontrollers (STM32, ESP32, 8051), Linux, Git, Keil uVision, Proteus.",
+      "parsedSkills": [
+        "Embedded C",
+        "STM32",
+        "FreeRTOS",
+        "Verilog",
+        "I2C",
+        "SPI",
+        "UART",
+        "CAN Bus",
+        "FSM"
+      ],
+      "parsedProjects": [
+        "Smart Agricultural IoT Monitoring with FreeRTOS & STM32",
+        "Digital Clock with Alarm in Verilog on FPGA",
+        "Automotive CAN Bus Communication Node"
+      ],
+      "parsedEducation": "B.Tech in Electronics & Communication Engineering",
+      "createdAt": "2026-10-10T06:32:12.376Z"
+    }
+  ],
+  "interviews": [
+    {
+      "id": "int-demo-301",
+      "userId": "usr-demo-101",
+      "resumeId": "res-demo-202",
+      "jobRole": "Embedded Software Engineer",
+      "interviewType": "technical",
+      "interviewMode": "chat",
+      "cameraEnabled": false,
+      "durationSeconds": 600,
+      "status": "completed",
+      "startedAt": "2026-10-09T06:32:12.376Z",
+      "completedAt": "2026-10-09T06:41:12.376Z",
+      "overallScore": 84,
+      "createdAt": "2026-10-09T06:32:12.376Z"
+    },
+    {
+      "id": "int-1791613939615",
+      "userId": "usr-demo-101",
+      "resumeId": "res-demo-202",
+      "jobRole": "Embedded Software Engineer",
+      "interviewType": "technical",
+      "interviewMode": "chat",
+      "cameraEnabled": false,
+      "durationSeconds": 600,
+      "status": "in_progress",
+      "startedAt": "2026-10-10T06:32:19.615Z",
+      "createdAt": "2026-10-10T06:32:19.615Z"
+    }
+  ],
+  "interviewQuestions": [
+    {
+      "id": "q-demo-1",
+      "interviewId": "int-demo-301",
+      "orderIndex": 1,
+      "questionText": "Can you explain the significance of the \"volatile\" keyword in Embedded C and describe two concrete scenarios where omitting it causes firmware bugs?",
+      "category": "Embedded C Fundamentals",
+      "evaluationCriteria": "Understands compiler optimization, hardware registers, interrupt service routines (ISR), and shared memory variables."
+    },
+    {
+      "id": "q-demo-2",
+      "interviewId": "int-demo-301",
+      "orderIndex": 2,
+      "questionText": "In your STM32 IoT project, you used FreeRTOS task queues. What is priority inversion in real-time operating systems, and how did FreeRTOS address it?",
+      "category": "RTOS & Embedded Systems",
+      "evaluationCriteria": "Knowledge of priority inversion, high/low priority tasks, unbounded delay, and Priority Inheritance mechanism in Mutexes."
+    },
+    {
+      "id": "q-int-1791613939615-1",
+      "interviewId": "int-1791613939615",
+      "orderIndex": 1,
+      "questionText": "In Embedded C, why is the \"volatile\" qualifier essential when declaring variables updated inside an Interrupt Service Routine (ISR) or mapped to hardware peripheral registers?",
+      "category": "Embedded C Architecture",
+      "evaluationCriteria": "Explains compiler register optimization, preventing unwanted register caching, and ensuring fresh memory bus access."
+    },
+    {
+      "id": "q-int-1791613939615-2",
+      "interviewId": "int-1791613939615",
+      "orderIndex": 2,
+      "questionText": "Compare SPI, I2C, and UART serial communication protocols in terms of speed, bus topology, hardware overhead, and synchronization. In what scenario would you pick SPI over I2C?",
+      "category": "Hardware Communication Protocols",
+      "evaluationCriteria": "Accurately contrasts 2-wire vs 4-wire, master-slave addressing, pull-up resistors, duplex modes, and throughput trade-offs."
+    },
+    {
+      "id": "q-int-1791613939615-3",
+      "interviewId": "int-1791613939615",
+      "orderIndex": 3,
+      "questionText": "What is the fundamental difference between a Semaphore and a Mutex in a Real-Time Operating System (RTOS)? How does priority inversion occur, and how does priority inheritance resolve it?",
+      "category": "RTOS & Task Synchronization",
+      "evaluationCriteria": "Explains signaling vs ownership, unbounded task blocking, and priority inheritance mechanism in FreeRTOS/RTOS."
+    },
+    {
+      "id": "q-int-1791613939615-4",
+      "interviewId": "int-1791613939615",
+      "orderIndex": 4,
+      "questionText": "In digital logic design and VLSI, what are Setup Time and Hold Time? What happens if setup or hold slack is negative, and how do you fix setup violations versus hold violations?",
+      "category": "VLSI & Timing Analysis",
+      "evaluationCriteria": "Understands flip-flop timing windows, metastability, clock skew, data path delays, and buffer insertion techniques."
+    },
+    {
+      "id": "q-int-1791613939615-5",
+      "interviewId": "int-1791613939615",
+      "orderIndex": 5,
+      "questionText": "Explain the difference between Harvard and von Neumann architectures. Which architecture is typical in modern microcontrollers like the ARM Cortex-M, and why?",
+      "category": "Microcontroller Architecture",
+      "evaluationCriteria": "Contrasts separate vs unified instruction/data buses, pipelining benefits, and ARM Cortex-M Modified Harvard implementation."
+    },
+    {
+      "id": "q-int-1791613939615-6",
+      "interviewId": "int-1791613939615",
+      "orderIndex": 6,
+      "questionText": "Looking at your project experience, how would you design debounce logic for a physical pushbutton connected to a GPIO pin—both using software timers and hardware circuitry?",
+      "category": "Practical Hardware Design",
+      "evaluationCriteria": "Mechanical contact bounce duration (5-20ms), state machine / timer-based sampling in software, and RC low-pass filter / Schmitt trigger in hardware."
+    }
+  ],
+  "interviewAnswers": [
+    {
+      "id": "ans-demo-1",
+      "interviewId": "int-demo-301",
+      "questionId": "q-demo-1",
+      "answerText": "The volatile keyword tells the C compiler not to optimize the variable because its value can change unexpectedly from outside the current execution flow. Two scenarios: memory-mapped peripheral hardware registers (like reading an ADC status register), and global flags modified inside an Interrupt Service Routine (ISR) that are read in the main while(1) loop.",
+      "durationSeconds": 75,
+      "submittedAt": "2026-10-09T06:34:12.376Z"
+    },
+    {
+      "id": "ans-demo-2",
+      "interviewId": "int-demo-301",
+      "questionId": "q-demo-2",
+      "answerText": "Priority inversion happens when a high-priority task is blocked waiting for a resource locked by a lower-priority task, and a medium-priority task preempts the lower task, indefinitely starving the high-priority task. In FreeRTOS, mutexes use priority inheritance where the low task temporarily inherits the high task priority until it releases the mutex.",
+      "durationSeconds": 90,
+      "submittedAt": "2026-10-09T06:37:12.376Z"
+    }
+  ],
+  "interviewFeedback": [
+    {
+      "id": "fb-demo-1",
+      "interviewId": "int-demo-301",
+      "overallScore": 84,
+      "technicalScore": 88,
+      "communicationScore": 80,
+      "strengths": [
+        "Strong command of Embedded C compiler optimization nuances and hardware registers.",
+        "Accurate and structured explanation of FreeRTOS priority inheritance mechanics.",
+        "Direct, crisp answers without irrelevant filler words."
+      ],
+      "improvements": [
+        "Mention binary semaphores vs mutexes when explaining why priority inheritance only applies to mutexes in RTOS.",
+        "Could explicitly state how memory barriers and compiler flags (like -O2 or -O3) affect volatile variables."
+      ],
+      "questionEvaluations": [
+        {
+          "questionId": "q-demo-1",
+          "questionText": "Can you explain the significance of the \"volatile\" keyword in Embedded C and describe two concrete scenarios where omitting it causes firmware bugs?",
+          "answerText": "The volatile keyword tells the C compiler not to optimize the variable because its value can change unexpectedly...",
+          "score": 9,
+          "whatWentWell": "Identified both memory-mapped registers and ISR flags accurately with clear technical justification.",
+          "specificMistakes": "Did not point out multi-threaded or multi-core shared memory variables as a third classic case.",
+          "missingPoints": "Mentioning cache coherency or exact compiler assembly caching (e.g. keeping variable in CPU register vs memory re-read).",
+          "betterSampleAnswer": "In Embedded C, \"volatile\" informs the compiler that a variable may be altered by factors outside current code flow, disabling aggressive register caching. Scenario 1: Memory-mapped hardware I/O registers (e.g., UART Status Register), where reading the same memory address must trigger fresh bus access. Scenario 2: Global flags shared between an ISR and foreground loop; without volatile, the compiler will optimize while(!flag) into an infinite loop by caching flag in a CPU register.",
+          "practicalTips": "Keep a quick code snippet ready in mind showing `volatile uint32_t *reg = (uint32_t *)0x40021000;` during placement interviews."
+        },
+        {
+          "questionId": "q-demo-2",
+          "questionText": "In your STM32 IoT project, you used FreeRTOS task queues. What is priority inversion in real-time operating systems, and how did FreeRTOS address it?",
+          "answerText": "Priority inversion happens when a high-priority task is blocked waiting for a resource locked by a lower-priority task...",
+          "score": 8,
+          "whatWentWell": "Clear definition of the high-medium-low task deadlock scenario and correctly identified Priority Inheritance in Mutexes.",
+          "specificMistakes": "Did not contrast FreeRTOS binary semaphores with mutexes regarding ownership and inheritance.",
+          "missingPoints": "Explaining that binary semaphores in FreeRTOS do not support priority inheritance and can still suffer from priority inversion.",
+          "betterSampleAnswer": "Priority inversion occurs when a medium-priority task preempts a low-priority task holding a shared lock needed by a high-priority task, causing unbounded delay to the high-priority task. FreeRTOS solves this through Priority Inheritance on Mutexes: the task holding the mutex temporarily assumes the highest priority among tasks waiting for that mutex until release. Notably, FreeRTOS binary semaphores lack priority inheritance, so mutexes must always be used for resource mutual exclusion.",
+          "practicalTips": "Highlight the difference between synchronization (semaphores) and mutual exclusion (mutexes) in campus tests."
+        }
+      ],
+      "recommendedTopics": [
+        "Embedded C: Pointers to functions and callback mechanisms",
+        "ARM Cortex-M: Nested Vectored Interrupt Controller (NVIC) prioritization and tail-chaining",
+        "VLSI: Setup and hold slack margin calculations"
+      ],
+      "createdAt": "2026-10-09T06:41:12.376Z"
+    }
+  ],
+  "recordings": []
+}
